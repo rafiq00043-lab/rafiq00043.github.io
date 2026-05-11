@@ -333,8 +333,7 @@ function App() {
 // Rendering
 window.addEventListener('load', function() {
     const root = document.getElementById('root');
-
     if (root) {
-        ReactDOM.createRoot(root).render(<App />);
+        ReactDOM.createRoot(root).render(React.createElement(App));
     }
 });
